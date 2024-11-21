@@ -5,6 +5,10 @@ with open("C:\\Users\\Alexander\\OneDrive\\Desktop\\one_or_more_entries_for_pers
     lines = database_2.readlines()
     for line in range(len(lines)):
         if lines[line].strip() == final_call_name:
+            print("\nEntered name was found in the file.")
+            print("Iterating....")
+            print("DONE.\n")
+            print("Result:")
             print(lines[line].strip())
             print(lines[line + 1].strip())
             print(lines[line + 2].strip())
@@ -13,4 +17,4 @@ with open("C:\\Users\\Alexander\\OneDrive\\Desktop\\one_or_more_entries_for_pers
             print(lines[line + 5].strip())
             break
     else:
-        print(f"'{call_name}' was not found in the file.")
+        print(f"\n'{call_name}' was not found in the file.\n")
